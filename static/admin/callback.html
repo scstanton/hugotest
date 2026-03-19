@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Authenticating...</title>
+  </head>
+  <body>
+    <script>
+      function receiveMessage(e) {
+        window.opener.postMessage(e.data, e.origin);
+      }
+      window.addEventListener("message", receiveMessage, false);
+
+      if (window.opener) {
+        window.opener.postMessage(
+          "authorization:" + location.hash.replace("#", ""),
+          location.origin
+        );
+      }
+      window.close();
+    </script>
+  </body>
+</html>
