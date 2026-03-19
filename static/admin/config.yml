@@ -4,6 +4,7 @@ backend:
   branch: main  # or master
   base_url: https://api.netlify.com
   auth_endpoint: auth
+  site_domain: effortless-melba-927424.netlify.app
 
 media_folder: static/images/uploads
 public_folder: /images/uploads
