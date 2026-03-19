@@ -1,0 +1,4 @@
+baseURL = "https://scstanton.github.io/hugotest/"
+languageCode = "en-us"
+title = "My Hugo Site"
+theme = "ananke"
