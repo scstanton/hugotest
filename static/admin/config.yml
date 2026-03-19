@@ -2,6 +2,8 @@ backend:
   name: github
   repo: scstanton/hugotest
   branch: main  # or master
+  base_url: https://effortless-melba-927424.netlify.app # Your Netlify site's URL
+  auth_endpoint: api/auth
 
 media_folder: static/images/uploads
 public_folder: /images/uploads
