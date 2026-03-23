@@ -2,10 +2,6 @@ backend:
   name: github
   repo: scstanton/hugotest
   branch: main  # or master
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
-  site_domain: effortless-melba-927424.netlify.app
-  cms_label_prefix: decap-cms
 
 media_folder: static/images/uploads
 public_folder: /images/uploads
