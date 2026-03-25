@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="logo-container">
+    <a href="/">
+      <img src="/images/bsides-twitter-card.png" alt="BSides Logo" class="logo">
+    </a>
+  </div>
+  
+  <nav class="top-menu">
+    <ul>
+      {{ range site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}" {{ if .Params.external }}target="_blank" rel="noopener noreferrer"{{ end }}>
+            {{ .Name }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>
