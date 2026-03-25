@@ -6,22 +6,26 @@ theme = "ananke"
 # Define the Top Menu
 [menu]
   [[menu.main]]
+    identifier = "home"
     name = "Home"
     url = "/"
     weight = 10
 
   [[menu.main]]
+    identifier = "news"
     name = "News"
     url = "/news/"
     weight = 20
 
   [[menu.main]]
+    identifier = "about"
     name = "About"
     url = "/about/"
     weight = 30
 
   # External Links
   [[menu.main]]
+    identifier = "discord"
     name = "Discord"
     url = "https://discord.gg/your-invite-code"
     weight = 40
@@ -29,6 +33,7 @@ theme = "ananke"
     params = { external = true } 
 
   [[menu.main]]
+    identifier = "schedule"
     name = "Schedule"
     url = "https://your-external-schedule-link.com"
     weight = 50
